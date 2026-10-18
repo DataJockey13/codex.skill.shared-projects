@@ -1,0 +1,12 @@
+{
+  "target": "/Users/dj/.agents/skills/setup-shared-project",
+  "version": "1.0.0",
+  "changed": false,
+  "platform": "darwin",
+  "verified": true,
+  "at": "2026-10-18T14:56:56.638Z",
+  "architecture": "arm64",
+  "sourcePackageSha256": "f9213c7c92517ec4abe90f8f60e8ad7fa6e55fb3b4d81ea9c1199c7c321ab44c",
+  "installedPackageSha256": "f9213c7c92517ec4abe90f8f60e8ad7fa6e55fb3b4d81ea9c1199c7c321ab44c",
+  "nativeVerificationPackageSha256": "f9213c7c92517ec4abe90f8f60e8ad7fa6e55fb3b4d81ea9c1199c7c321ab44c"
+}

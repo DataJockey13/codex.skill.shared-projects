@@ -1,0 +1,79 @@
+{
+  "completed_at": "2026-10-18T14:14:01.759973Z",
+  "path_basis": "SHARED_ROOT",
+  "project": "Documents/Vertrag",
+  "basis_configuration": "Documents/Vertrag/workspace.paths.json",
+  "configuration_sha256": "9352a8543ae2c30a8ce58876e7c63ba9621ab153d592f648c442e17451f4ba74",
+  "path_migration": {
+    "migrated_existing_text_files": 49,
+    "legacy_mac_absolute_paths_outside_configuration": 0,
+    "historical_binary_archives_unchanged": true,
+    "historical_generator_comment_paths_normalized": 4
+  },
+  "mac": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": "v26.8.1",
+    "tools_tests": 8,
+    "frontend_tests": 92,
+    "design_tests": 92,
+    "frontend_typecheck_and_build": true,
+    "design_typecheck_and_build": true,
+    "dev_live_edit_and_delete": true,
+    "preview_http": true,
+    "shared_export": true
+  },
+  "windows": {
+    "at": "2026-10-18T14:10:38.120Z",
+    "platform": "win32",
+    "architecture": "x64",
+    "node": "24.22.0",
+    "relativeProject": "Documents/Vertrag",
+    "sharedBasisValidated": true,
+    "sharedConfigSha256": "9352a8543ae2c30a8ce58876e7c63ba9621ab153d592f648c442e17451f4ba74",
+    "steps": [
+      {
+        "name": "tools",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "name": "frontend-tests",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "name": "frontend-build",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "name": "design-tests",
+        "exitCode": 0,
+        "passed": true
+      },
+      {
+        "name": "design-build",
+        "exitCode": 0,
+        "passed": true
+      }
+    ],
+    "passed": true,
+    "completedAt": "2026-10-18T14:12:19.545Z"
+  },
+  "shared_node_modules_absent": true,
+  "previous_shared_modules": "Lokal im Cache unter previous-installations gesichert",
+  "unchanged_ui_fixture_and_test_files": 224,
+  "runner_files": {
+    "tools/frontend.mjs": "4c2357127fc91ddbc9dcb70a6d8cf2034fbfd64f3e0cb07ca12474a361cf6fcc",
+    "tools/node-runtime.mjs": "80f9e697a898e2389c7c6e38ac6ef2e635e7e8c32292d59cd5cae19a2d875bf2",
+    "tools/paths.mjs": "1e734b3fe7af8e5bac7e38c1d14e1b8c276ba76417b898f5db69165c171a92c8",
+    "tools/tests/workspace.test.mjs": "9d149625bba65d997bb356b770ffe6ccaebb09d2424b099441b78ed3a2aac22a",
+    "tools/verify-windows.mjs": "85b6e48e96a652d246b9d0411291d50b4b2c04da3cbbfff19f519d26c0546ff3"
+  },
+  "archive_manifest_files_verified": 247,
+  "limitations": [
+    "Dateifreigaben richten keine DNS-, Zertifikats- oder API-Anmeldekonfiguration ein",
+    "Bereits gestartete Chats erhalten keine rückwirkend injizierten Systemnachrichten; die neuen AGENTS-Dateien sind lesbar und werden von neuen Chats entdeckt"
+  ]
+}

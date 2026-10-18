@@ -1,0 +1,20 @@
+{
+  "name": "vertrag-workspace",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  },
+  "scripts": {
+    "paths": "node tools/paths.mjs --json",
+    "setup": "node tools/frontend.mjs setup frontend",
+    "dev": "node tools/frontend.mjs dev frontend",
+    "design": "node tools/frontend.mjs dev design",
+    "test": "node tools/frontend.mjs test frontend",
+    "test:tools": "node --test tools/tests/workspace.test.mjs",
+    "build": "node tools/frontend.mjs build frontend",
+    "preview": "node tools/frontend.mjs preview frontend",
+    "export": "node tools/frontend.mjs export frontend",
+    "preinstall": "node tools/frontend.mjs block-install frontend"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "name": "setup-shared-project",
+  "version": "1.0.0",
+  "files": {
+    "SKILL.md": "ee32375b904832593bd844ff530ac1d8cec4b35bf1e4ba0e62407e4d80638d9f",
+    "agents/openai.yaml": "f5a3e5e3d3ef3ee0df9430bdf9391cfbe78f12bc556103738095a3e23db19b60",
+    "references/configuration.md": "d0a5669af8afa0b47cba9a88ac8e31b44c3a8d472ac8acd29fc0f31297a04aa9",
+    "references/operations.md": "87e860750349d67fd452dd0e742129724a5b06c0f54642010d11e2911ad22612",
+    "references/shared-project.schema.json": "e9316bef7dcb999c777376b2edff2e1d226c40c44d9922b13be89fd46903e7f6",
+    "scripts/cli.mjs": "038f985c0397bad9e477cb61899fa6eac7562f5cbaf001e181325b760ad12ec6",
+    "scripts/install-skill.mjs": "ddc68d2d9fc8c9d85e9f1439f5f74bdf809f56bd155fabf970fcc527dfde8b2a",
+    "scripts/lib/core.mjs": "35f86da378e26c5205af76a15283e561ec996f3d5e3648ec20a71e0611c92efd",
+    "scripts/lib/lock.mjs": "5c3c4583b75da07b7051c514207bf50216f58f419578ad477522a4b4a14a9e27",
+    "scripts/lib/node.mjs": "79932085e6f1eaced13d74b2ba68151caa5be15a0f588afd7de87f00c5c1d4cc",
+    "scripts/lib/package.mjs": "c42de5ef6619894eb60d1b0909991e9ed5293c2d80c67e84e41917829303149d",
+    "scripts/lib/runtime.mjs": "6111a54f4ed3ce5de000c4e79ed82719fd1081409ee41102faa1bfd29d7d3398",
+    "scripts/lib/setup.mjs": "4aa2b6f55b2b1d9fea636802d425de79c96a227ca09cc9d40b04b81cb5305f88",
+    "scripts/verify-native.mjs": "f386ad3586dabfc8606ff6d0467aa3d32bbedab19c37cd328d6a96c72dcf59da"
+  }
+}

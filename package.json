@@ -1,0 +1,16 @@
+{
+  "name": "codex-shared-projects",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "^22.18.0 || >=24.12.0" },
+  "scripts": {
+    "verify:handoff": "node scripts/verify-handoff.mjs",
+    "test:reference": "node --test reference/vertrag/tools/tests/workspace.test.mjs",
+    "test:toolkit": "node --test tests/*.test.mjs",
+    "pack:skill": "node scripts/pack-skill.mjs",
+    "verify:package": "node scripts/pack-skill.mjs --check",
+    "verify:native": "node skills/setup-shared-project/scripts/verify-native.mjs",
+    "test": "npm run verify:handoff && npm run test:reference && npm run test:toolkit && npm run verify:package"
+  }
+}

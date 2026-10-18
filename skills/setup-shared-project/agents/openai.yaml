@@ -1,0 +1,3 @@
+interface:
+  display_name: "Gemeinsame Mac-/Windows-Projekte"
+  short_description: "Gemeinsame Quellen mit lokalen Laufzeiten einrichten"

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "workspaceId": "curasoft-vertrag-shared",
+  "bases": {
+    "darwin": "/Users/dj",
+    "win32": "Y:\\"
+  },
+  "runtime": { "fallbackNode": "24.22.0" },
+  "paths": {
+    "project": "Documents/Vertrag",
+    "wiki": "Documents/Vertrag/wiki",
+    "sources": "Documents/Vertrag/sources",
+    "frontend": "Documents/Vertrag/vertrag.csi",
+    "design": "Documents/Vertrag/vertrag.csi.entwurf",
+    "api": "Source/api.curasoft.de",
+    "frontendLegacy": "Source/vertrag.csi.curasoft.de"
+  }
+}

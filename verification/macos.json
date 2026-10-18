@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "toolkitVersion": "1.0.0",
+  "at": "2026-10-18T14:55:37.721Z",
+  "environment": "darwin",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "node": "26.8.1",
+  "nativeWindows": false,
+  "checks": [
+    "paths-only-preview-apply-idempotent",
+    "isolated-identities",
+    "local-npm-lifecycle-test-build",
+    "parallel-test-build",
+    "source-unchanged",
+    "same-runtime-lock",
+    "staged-export-and-failure-rollback",
+    "vite-dev-http-change-delete",
+    "dev-and-test-parallel",
+    "vite-preview-http",
+    "update-and-rollback",
+    "real-official-node-bootstrap"
+  ],
+  "passed": true,
+  "limits": [],
+  "packageSha256": "f9213c7c92517ec4abe90f8f60e8ad7fa6e55fb3b4d81ea9c1199c7c321ab44c",
+  "vite": "8.3.4",
+  "bootstrap": {
+    "version": "24.22.0",
+    "officialDownload": true,
+    "sha256Verified": true,
+    "platform": "darwin",
+    "arch": "arm64"
+  }
+}

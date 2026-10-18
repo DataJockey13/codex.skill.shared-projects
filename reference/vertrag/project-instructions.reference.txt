@@ -1,0 +1,65 @@
+# Projektanweisungen
+
+Duze den Benutzer immer. Diese Regeln gelten für alle Chats in diesem Projekt.
+
+## Pfade vor jeder Arbeit auflösen
+
+- Lies `workspace.paths.json`. Nur dort stehen die betriebssystemspezifischen
+  Basispfade. `SHARED_ROOT` bezeichnet den gemeinsamen Mac-Benutzerordner.
+- Führe aus dem Projektordner `node tools/paths.mjs --json` aus. Der Resolver
+  erkennt die ausführende Umgebung, validiert die Basis und gibt native Pfade
+  zurück. Aus einem Unterordner verwende den entsprechenden relativen Pfad zu
+  `tools/paths.mjs`. Bei einem Fehler zuerst die Zuordnung prüfen.
+- Verzeichnisangaben `Documents/...` und `Source/...` in Texten und JSON sind
+  relativ zu `SHARED_ROOT`. Verwende für konkrete Zugriffe den Resolver, z. B.
+  `node tools/paths.mjs resolve Source/api.curasoft.de`.
+- Neue gemeinsame Pfadreferenzen bleiben relativ zu dieser Basis. Markdown-
+  Links und Quellcode-Imports bleiben echte dateirelative Links. Keine
+  betriebssystemspezifischen Absolutpfade außerhalb der Basiskonfiguration
+  speichern. Laufzeitausgaben dürfen native absolute Pfade anzeigen.
+- `SHARED_ROOT` kann ausdrücklich als Umgebungsvariable vorgegeben werden.
+  `HOME`, `USERPROFILE` und `CODEX_HOME` nicht umbiegen. WSL ist eine eigene
+  Umgebung; keine Windows-Pfade ungeprüft als Linux-Pfade verwenden.
+- Ein Pfad erteilt keine Zugriffsrechte. Hänge die API-Codebasis bei Bedarf
+  als zusätzlichen Codex-Projektordner an. Netzwerkadressen und `localhost`
+  sind von Dateipfaden unabhängig.
+
+## Frontend und plattformspezifische Abhängigkeiten
+
+- Der gemeinsame Quelltext ist die einzige bearbeitete Codebasis. Bearbeite
+  niemals die automatisch erzeugten lokalen Laufzeitkopien.
+- Verwende `npm run setup`, `npm run dev`, `npm test`, `npm run build` und
+  `npm run preview`. Aus dem Projektwurzelordner startet `npm run design`
+  den archivierten Entwurf. Dieselben Befehle funktionieren in den jeweiligen
+  Frontend-Unterordnern. Bei einer PowerShell-Richtliniensperre `npm.cmd`
+  statt `npm` verwenden.
+- Der Runner installiert Abhängigkeiten automatisch im lokalen Cache der
+  ausführenden Umgebung, getrennt nach Plattform, Architektur, Node-Version,
+  Anwendung und Aufgabe. Im Dev-Modus übernimmt er Quelländerungen laufend.
+- Bei zu altem vorhandenem Node lädt der Runner die konfigurierte Node-LTS-
+  Distribution ausschließlich von `nodejs.org`, prüft die offizielle SHA-256-
+  Summe und verwendet sie lokal. Die systemweite Installation bleibt erhalten.
+- Kein `npm ci` oder `npm install` im gemeinsamen Quellordner, keine gemeinsam
+  umgeschalteten `node_modules`-Links und keine manuelle Installation in den
+  Laufzeitkopien. Abhängigkeiten im gemeinsamen `package.json` und Lockfile
+  ändern; der Runner installiert bei der nächsten Ausführung neu.
+- Builds liegen im lokalen Laufzeitordner. `npm run export` baut und kopiert
+  den fertigen Build nach `dist/` im jeweiligen gemeinsamen Frontendordner.
+  Ein Export sperrt dieses gemeinsame Ausgabeziel gegen weitere Exporte.
+- Nach Änderungen an der Infrastruktur `npm run test:tools` ausführen, nach
+  Frontendänderungen zusätzlich dessen Tests und Build. Keine Tests oder
+  Installationen des anderen Betriebssystems als ausgeführt behaupten.
+
+## Wissen und bestehende Arbeit
+
+- Für Wiki-Arbeit `wiki.md` vollständig lesen und über `wiki/index.md`
+  einsteigen. Die Pfadkonvention steht in
+  `wiki/plattformuebergreifende-pfade.md`.
+- Bestehende lokale Änderungen erhalten. Keine automatischen Commits oder
+  Zurücksetzungen. Parallele Chats dürfen dieselbe Datei nicht unkoordiniert
+  ändern.
+- Die Pfadmigration vom 18.10.2026 darf auf ausdrücklichen Benutzerauftrag
+  auch Pfadtexte in historischen Belegen anpassen. Daraus keine neuen
+  fachlichen Prüfereignisse ableiten; fachliche Inhalte unverändert lassen.
+- Binäre historische ZIPs, Git-Bundles, `.git` und installierte Fremdpakete
+  sind keine aktiven Pfadkonfigurationen und werden nicht umgeschrieben.
